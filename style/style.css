@@ -44,7 +44,9 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-h2, h1, p {
+h2,
+h1,
+p {
     margin: 0;
 }
 
@@ -71,7 +73,7 @@ h2, h1, p {
 }
 
 .header-nav__list {
-display: flex;
+    display: flex;
 }
 
 .header-nav__list-element {
@@ -84,17 +86,17 @@ display: flex;
 }
 
 .header-nav__link {
-font-family: Montserrat;
-font-style: normal;
-font-weight: 300;
-font-size: 14px;
-color: #FFFFFF;
-text-decoration: none;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
 .header-nav__link:hover {
     color: #C7B299;
-    }
+}
 
 .header-nav__cart {
     fill: #FFFFFF;
@@ -105,70 +107,71 @@ text-decoration: none;
     fill: #FFFFFF;
 }
 
-.header-nav__cart:hover, .header-nav__search:hover {
+.header-nav__cart:hover,
+.header-nav__search:hover {
     fill: #C7B299;
 }
 
 .slider-secton-wrapper {
-display: flex;
-padding: 331px 160px 312px 160px;
-justify-content: space-between;
+    display: flex;
+    padding: 331px 160px 312px 160px;
+    justify-content: space-between;
 
 }
 
-.header-slogan{
+.header-slogan {
     width: 569px;
     text-align: center;
 }
 
 .header-slogan__slogan {
     font-family: Raleway;
-font-style: normal;
-font-weight: 500;
-font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
 
-color: #FFFFFF;
+    color: #FFFFFF;
 }
 
 .header-slogan__slogan-main {
     font-family: Raleway;
-font-style: normal;
-font-weight: 600;
-font-size: 52px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 52px;
 
-color: #FFFFFF;
+    color: #FFFFFF;
 }
 
 .header-slogan__slogan-text {
     font-family: Montserrat;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    text-align: center;
 
-color: #FFFFFF;
+    color: #FFFFFF;
 }
 
 .header-slogan__slogan-btn {
-background: #988574;
-border-radius: 3px;
+    background: #988574;
+    border-radius: 3px;
 
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 14px;
-align-items: center;
-text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    align-items: center;
+    text-align: center;
 
-color: #FFFFFF;
-padding: 19px 40px;
-margin-top: 39px;
-border: none;
+    color: #FFFFFF;
+    padding: 19px 40px;
+    margin-top: 39px;
+    border: none;
 }
 
 .header-slogan__slogan-btn:hover {
-outline: 2px solid #FFFFFF;
-cursor: pointer;
+    outline: 2px solid #FFFFFF;
+    cursor: pointer;
 }
 
 .slider-secton-wrapper__arr {
@@ -180,7 +183,7 @@ cursor: pointer;
     fill: #D3C1AC;
 }
 
-.header-slider-nav{
+.header-slider-nav {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -201,6 +204,61 @@ cursor: pointer;
 .header-slider-nav__element:hover {
     width: 10px;
     height: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.5);
     background: transparent;
+}
+
+.services {
+    background: #FFFFFF;
+    display: flex;
+    padding: 93px calc(50% - 960px) 88px calc(50% - 960px);
+    justify-content: center;
+}
+
+.services-wrap {
+    width: 270px;
+    margin: 0 15px;
+    text-align: center;
+    
+}
+
+.services-wrap:hover::after {
+    
+    content: "";
+display: block;
+width: 70px;
+height: 3px;
+background: #C7B199;
+/* text-align: center; */
+margin: 0 auto;
+}
+
+.services-wrap:hover .services-wrap__img {
+    fill: #C7B299;
+}
+
+.services-wrap:hover .services-wrap__title {
+    color: #C7B299;
+}
+
+.services-wrap__img {
+    fill: #555555;
+}
+
+.services-wrap__title {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    color: #555555;
+}
+
+.services-wrap__text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 30px;
 }
