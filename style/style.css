@@ -1,0 +1,206 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../fonts/montserrat/Montserrat-Light.ttf);
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../fonts/montserrat/Montserrat-Regular.ttf);
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url(../fonts/raleway/Raleway-Regular.ttf);
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url(../fonts/raleway/Raleway-Medium.ttf);
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url(../fonts/raleway/Raleway-SemiBold.ttf);
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/roboto/Roboto-Regular.ttf);
+    font-style: normal;
+    font-weight: 400;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2, h1, p {
+    margin: 0;
+}
+
+.header {
+    padding: 39px calc(50% - 960px) 0px calc(50% - 960px);
+    /* padding-top: 39px; */
+    background-image: url(../img/img/bg_header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 0;
+    min-height: 1024px;
+}
+
+.header-nav {
+    display: flex;
+    padding: 0 322px 0 323px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-links-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav__list {
+display: flex;
+}
+
+.header-nav__list-element {
+    list-style: none;
+    margin-right: 24px;
+}
+
+.header-nav__list-element:last-child {
+    margin-right: 54px;
+}
+
+.header-nav__link {
+font-family: Montserrat;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+color: #FFFFFF;
+text-decoration: none;
+}
+
+.header-nav__link:hover {
+    color: #C7B299;
+    }
+
+.header-nav__cart {
+    fill: #FFFFFF;
+    margin-right: 30px;
+}
+
+.header-nav__search {
+    fill: #FFFFFF;
+}
+
+.header-nav__cart:hover, .header-nav__search:hover {
+    fill: #C7B299;
+}
+
+.slider-secton-wrapper {
+display: flex;
+padding: 331px 160px 312px 160px;
+justify-content: space-between;
+
+}
+
+.header-slogan{
+    width: 569px;
+    text-align: center;
+}
+
+.header-slogan__slogan {
+    font-family: Raleway;
+font-style: normal;
+font-weight: 500;
+font-size: 36px;
+
+color: #FFFFFF;
+}
+
+.header-slogan__slogan-main {
+    font-family: Raleway;
+font-style: normal;
+font-weight: 600;
+font-size: 52px;
+
+color: #FFFFFF;
+}
+
+.header-slogan__slogan-text {
+    font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+text-align: center;
+
+color: #FFFFFF;
+}
+
+.header-slogan__slogan-btn {
+background: #988574;
+border-radius: 3px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+padding: 19px 40px;
+margin-top: 39px;
+border: none;
+}
+
+.header-slogan__slogan-btn:hover {
+outline: 2px solid #FFFFFF;
+cursor: pointer;
+}
+
+.slider-secton-wrapper__arr {
+    margin-top: 42px;
+    fill: #FFFFFF;
+}
+
+.slider-secton-wrapper__arr:hover {
+    fill: #D3C1AC;
+}
+
+.header-slider-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    margin-bottom: 49px;
+}
+
+.header-slider-nav__element {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    margin: 0 5px;
+    border: 1px solid transparent;
+}
+
+.header-slider-nav__element:hover {
+    width: 10px;
+    height: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+    background: transparent;
+}
