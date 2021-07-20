@@ -630,3 +630,49 @@ p {
     padding-left: 27px;
     margin-bottom: 10px;
 }
+
+.counters {
+    background: radial-gradient(94.87% 15543.47% at 4.58% 100%, #211B19 0%, #4E3326 100%);
+    min-height: 211px;
+    padding: 35px calc(50% - 786px/2);
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.counters__elem {
+    text-align: center;
+    /* width: 120px; */
+}
+
+.counters__elem-icon {
+    fill: #C7B299;
+}
+
+.counters__elem-count {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    color: #FFFFFF;
+}
+
+.counters__elem-text {
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    color: #C7B299;
+    /* margin-bottom: 15px; */
+}
+
+.counters__elem-text::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 2px;
+    background: #FFFFFF;
+    margin: 15px auto 0 auto;
+    /* margin-bottom: 15px; */
+}
