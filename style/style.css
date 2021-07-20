@@ -455,6 +455,33 @@ p {
     padding: 26px 23px;
     background: #FBFAF8;
     box-sizing: border-box;
+
+    position: relative;
+}
+
+
+.latest-project__content-element-wrap::before {
+    content: "";
+    display: block;
+    top: -24px;
+    left: 6px;
+    border: 18px solid transparent;
+    border-bottom: 10px solid #FBFAF8;
+    width: 0;
+    height: 0;
+    position: absolute;
+}
+
+.latest-project__content-element:hover .latest-project__content-element-wrap::before {
+    content: "";
+    display: block;
+    top: -24px;
+    left: 6px;
+    border: 18px solid transparent;
+    border-bottom: 10px solid #352F2D;
+    width: 0;
+    height: 0;
+    position: absolute;
 }
 
 .latest-project__content-element-heading {
