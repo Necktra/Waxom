@@ -361,7 +361,7 @@ p {
 }
 
 .latest-project {
-    padding: 61px calc(50% - 1170px / 2) 33px calc(50% - 1170px / 2);
+    padding: 61px calc(50% - 1170px / 2) 0 calc(50% - 1170px / 2);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -517,4 +517,116 @@ p {
     color: #FFFFFF;
     margin-top: 47px;
     margin-bottom: 33px;
+    cursor: pointer;
+}
+
+.latest-project__load-btn:hover {
+    outline: 1px solid #000;
+}
+
+.video {
+    box-sizing: border-box;
+    min-height: 705px;
+    padding: 248px calc(50% - 570px / 2) 233px;
+    background-color: #000;
+    background-image: url(../img/img/bg_video_presentation.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* margin: 0 auto; */
+    text-align: center;
+}
+
+.video__play-button {
+    border-radius: 50%;
+    border: none;
+    background: rgba(0, 0, 0, .5);
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    margin-bottom: 31px;
+}
+
+.video__play-button-icon {
+    fill: #FFFFFF;
+}
+
+.video__heading {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    color: #FFFFFF;
+    margin-bottom: 18px;
+}
+
+.video__text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-bottom: 18px;
+}
+
+.video__time {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #C7B299;
+}
+
+.mobile {
+    /* padding: 190px calc(50% - 1157px /2) 206px calc(50% - 1157px /2); */
+
+    /* padding-left: calc(50% - 960px + 908px); */
+    padding: 190px calc(50% - 1920px/2) 0 calc(50% - 1920px/2);
+    box-sizing: border-box;
+    min-height: 694px;
+    background-image: url(../img/img/iphone.png);
+    background-repeat: no-repeat;
+    background-position: left calc(50% - 1157px /2 /2) bottom;
+}
+
+.mobile__heading {
+    margin-left: 908px;
+    /* margin-top: 190px; */
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    color: #555555;
+    margin-bottom: 20px;
+}
+
+.mobile__text {
+    margin-left: 908px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    color: #8C8C8C;
+    width: 670px;
+    margin-bottom: 49px;
+}
+
+.mobile__list {
+    margin-left: 975px;
+    /* list-style-image: url(../img/icons/); */
+    list-style: none;
+    padding-left: 0;
+}
+
+.mobile__list-element {
+    /* margin-left: 0; */
+    background-image: url(../img/icons/icon-list.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    color: #8C8C8C;
+    padding-left: 27px;
+    margin-bottom: 10px;
 }
