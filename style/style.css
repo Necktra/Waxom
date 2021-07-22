@@ -230,7 +230,7 @@ p {
     display: block;
     width: 70px;
     height: 3px;
-    background: transparent;
+    background: #F1EEE9;
     /* text-align: center; */
     margin: 0 auto;
 }
@@ -256,6 +256,9 @@ p {
 
 .services-wrap__img {
     fill: #555555;
+    width: 45px;
+    height: 45px;
+    margin-bottom: 30px;
 }
 
 .services-wrap__title {
@@ -264,6 +267,7 @@ p {
     font-weight: 600;
     font-size: 22px;
     color: #555555;
+    margin-bottom: 20px;
 }
 
 .services-wrap__text {
@@ -282,6 +286,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #FBFAF8;
 }
 
 .realization__heading {
@@ -586,6 +591,7 @@ p {
     background-image: url(../img/img/iphone.png);
     background-repeat: no-repeat;
     background-position: left calc(50% - 1157px /2 /2) bottom;
+    background-color: #FBFAF8;
 }
 
 .mobile__heading {
@@ -629,6 +635,8 @@ p {
     color: #8C8C8C;
     padding-left: 27px;
     margin-bottom: 10px;
+    line-height: 21px;
+
 }
 
 .counters {
@@ -933,7 +941,11 @@ p {
     text-decoration: none;
 }
 
-.footer__about-read-more-link::after {
+/* .footer__about-read-more-link:hover {
+    color: #C7B299;
+} */
+
+.footer__about-read-more-link:hover::after {
     content: "";
     display: inline-block;
     height: 0px;
@@ -996,9 +1008,49 @@ p {
     border-bottom: 1px solid #242424;
 }
 
-.footer__recent-posts-wrap:last-child,
+/* .footer__recent-posts-wrap:last-child,
 .footer__twitter-wrap:last-child {
     border-bottom: 1px solid transparent;
+} */
+
+.footer__recent-posts .footer__recent-posts-article-link:last-child .footer__recent-posts-wrap:last-child {
+    border-bottom: 1px solid transparent;
+}
+
+.footer__recent-posts-article-link {
+    text-decoration: none;
+}
+
+.footer__twitter .footer__twitter-article-link:last-child .footer__twitter-wrap:last-child {
+    border-bottom: 1px solid transparent;
+}
+
+.footer__twitter-article-link {
+    text-decoration: none;
+}
+
+.footer__recent-posts-article-link:hover .footer__recent-posts-date {
+    color: #FFFFFF;
+}
+
+.footer__recent-posts-article-link:hover .footer__recent-posts-text {
+    color: #C7B299;
+}
+
+.footer__twitter-article-link:hover .footer__twitter-date {
+    color: #FFFFFF;
+}
+
+.footer__twitter-article-link:hover .footer__twitter-text {
+    color: #C7B299;
+}
+
+.link-tag {
+    color: #00BFF3;
+}
+
+.link-tag-href {
+    color: #757575;
 }
 
 /* .footer__recent-posts-wrap:nth-child(2) .footer__recent-posts-date{
