@@ -42,6 +42,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
 }
 
 h2,
@@ -73,6 +74,10 @@ p {
     align-items: center;
 }
 
+/* .header-nav__logo {
+
+} */
+
 .header-nav__list {
     display: flex;
 }
@@ -93,6 +98,7 @@ p {
     font-size: 14px;
     color: #FFFFFF;
     text-decoration: none;
+    transition: color 0.4s;
 }
 
 .header-nav__link:hover {
@@ -168,10 +174,17 @@ p {
     padding: 19px 40px;
     margin-top: 39px;
     border: none;
+
+    transition: all 0.3s ease-in-out;
+
 }
 
-.header-slogan__slogan-btn:hover {
-    outline: 2px solid #FFFFFF;
+.header-slogan__slogan-btn:hover,
+.purchase__btn:hover,
+.latest-project__load-btn:hover {
+
+    transform: scale(1.1);
+    background: #7a6e64;
     cursor: pointer;
 }
 
@@ -201,6 +214,8 @@ p {
     background: rgba(255, 255, 255, 0.5);
     margin: 0 5px;
     border: 1px solid transparent;
+
+    transition: all 0.3s ease-in-out;
 }
 
 .header-slider-nav__element:hover {
@@ -208,6 +223,8 @@ p {
     height: 10px;
     border: 1px solid rgba(255, 255, 255, 0.5);
     background: transparent;
+
+    transform: scale(1.3);
 }
 
 .services {
@@ -222,6 +239,8 @@ p {
     margin: 0 15px;
     text-align: center;
     cursor: pointer;
+
+
 }
 
 .services-wrap::after {
@@ -233,6 +252,8 @@ p {
     background: #F1EEE9;
     /* text-align: center; */
     margin: 0 auto;
+
+    transition: all 0.3s ease-in-out;
 }
 
 .services-wrap:hover::after {
@@ -244,14 +265,20 @@ p {
     background: #C7B199;
     /* text-align: center; */
     margin: 0 auto;
+
+    /* transition: all 0.3s ease-in-out; */
 }
 
 .services-wrap:hover .services-wrap__img {
     fill: #C7B299;
+
+    /* transition: all 0.3s ease-in-out; */
 }
 
 .services-wrap:hover .services-wrap__title {
     color: #C7B299;
+
+    /* transition: all 0.3s ease-in-out; */
 }
 
 .services-wrap__img {
@@ -259,6 +286,8 @@ p {
     width: 45px;
     height: 45px;
     margin-bottom: 30px;
+
+    transition: all 0.3s ease-in-out;
 }
 
 .services-wrap__title {
@@ -268,6 +297,8 @@ p {
     font-size: 22px;
     color: #555555;
     margin-bottom: 20px;
+
+    transition: all 0.3s ease-in-out;
 }
 
 .services-wrap__text {
@@ -318,6 +349,20 @@ p {
     display: flex;
     justify-content: space-between;
     background: radial-gradient(94.87% 15543.47% at 4.58% 100%, #211B19 0%, #4E3326 100%);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 .purchase__heading {
@@ -358,11 +403,7 @@ p {
     border: none;
     width: 170px;
     min-height: 53px;
-}
-
-.purchase__btn:hover {
-    outline: 2px solid #FFFFFF;
-    cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 
 .latest-project {
@@ -417,11 +458,15 @@ p {
     padding: 8px 20px;
     margin: 0 5px;
     cursor: pointer;
+
+    transition: all 0.3s ease-in-out;
 }
 
 .latest-project__list-elem-btn:hover {
     color: #FFFFFF;
     background-color: #998575;
+
+    transform: rotate(360deg);
 }
 
 .latest-project__content-wrapper {
@@ -437,10 +482,16 @@ p {
     background-color: #352F2D;
     cursor: pointer;
     /* display: inline-block; */
+    /* transition: all 0.3s ease-in-out; */
+}
+
+.latest-project__content-element * {
+    transition: all 0.3s ease-in-out;
 }
 
 .latest-project__content-element:hover .latest-project__content-element-wrap {
     background: #352F2D;
+
 }
 
 .latest-project__content-element:hover .latest-project__content-element-heading {
@@ -475,6 +526,8 @@ p {
     width: 0;
     height: 0;
     position: absolute;
+
+    transition: all 0.3s ease-in-out;
 }
 
 .latest-project__content-element:hover .latest-project__content-element-wrap::before {
@@ -523,10 +576,7 @@ p {
     margin-top: 47px;
     margin-bottom: 33px;
     cursor: pointer;
-}
-
-.latest-project__load-btn:hover {
-    outline: 1px solid #000;
+    transition: all 0.3s ease-in-out;
 }
 
 .video {
@@ -549,6 +599,12 @@ p {
     height: 100px;
     cursor: pointer;
     margin-bottom: 31px;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.video__play-button:hover {
+    transform: scale(1.2);
 }
 
 .video__play-button-icon {
@@ -636,7 +692,6 @@ p {
     padding-left: 27px;
     margin-bottom: 10px;
     line-height: 21px;
-
 }
 
 .counters {
@@ -646,6 +701,9 @@ p {
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
+
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
 }
 
 .counters__elem {
@@ -722,11 +780,16 @@ p {
     /* align-items: stretch; */
     position: relative;
     cursor: pointer;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.recent-posts__wrap-section * {
+    transition: all 0.3s ease-in-out;
 }
 
 .recent-posts__wrap-section:hover {
     background-color: #352F2D;
-    ;
 }
 
 
@@ -737,6 +800,7 @@ p {
     height: 59px;
     /* background-color: red; */
     background: linear-gradient(to bottom, #363636 35px, #242424 24px);
+    /* background-image: linear-gradient(to bottom, rgba(30,87,153,0), rgba(30,87,153,0.8)); */
     border-radius: 3px;
     font-family: Roboto;
     font-style: normal;
@@ -748,11 +812,20 @@ p {
     left: 23px;
     z-index: 2;
     /* opacity: 1; */
+    /* transition: all 2s ease-in-out; */
+    /* transition: background 2s ease-in-out; */
+    /* transition: background 3s ease; */
 }
+
+/* .recent-posts__wrap-section:first-child{
+    transition: all 2s ease-in-out;
+} */
 
 .recent-posts__wrap-section:hover .recent-posts__date {
     background: linear-gradient(to bottom, #C7B199 35px, #A48D71 24px);
 }
+
+
 
 .recent-posts__date-day {
     font-family: Montserrat;
@@ -839,10 +912,13 @@ p {
     margin: 54px 9px 0 9px;
     padding: 0;
     fill: #D1D1D1;
+
+    transition: all 0.3s ease-in-out;
 }
 
 .recent-posts__nav-btn:hover {
     fill: #C7B299;
+    transform: scale(1.3);
 }
 
 .partners {
@@ -858,6 +934,15 @@ p {
 
 .partners__logo {
     margin: 0 37px;
+}
+
+.partners__logo-img {
+    transition: all 0.3s ease-in-out;
+}
+
+.partners__logo-img:hover {
+    /* transition: all 0.3s ease-in-out; */
+    transform: scale(1.1);
 }
 
 .footer {
@@ -911,6 +996,8 @@ p {
     font-weight: 300;
     font-size: 13px;
     color: #555555;
+
+    transition: all 0.3s ease-in-out;
 }
 
 .footer__nav-list-elem-link:hover {
@@ -939,11 +1026,10 @@ p {
     font-size: 14px;
     color: #D1D1D1;
     text-decoration: none;
+    /* transition-delay: .5s; */
+    /* transition: all 0.3s ease-in-out; */
 }
 
-/* .footer__about-read-more-link:hover {
-    color: #C7B299;
-} */
 
 .footer__about-read-more-link:hover::after {
     content: "";
@@ -955,6 +1041,9 @@ p {
     border-right: 5px solid transparent;
     border-left: 5px solid #D1D1D1;
     margin-left: 9px;
+    /* transition: all 0.3s ease-in-out; */
+    /* transition-delay: .5s; */
+
 }
 
 .footer__recent-posts-heading,
@@ -1008,10 +1097,10 @@ p {
     border-bottom: 1px solid #242424;
 }
 
-/* .footer__recent-posts-wrap:last-child,
-.footer__twitter-wrap:last-child {
-    border-bottom: 1px solid transparent;
-} */
+.footer__recent-posts-wrap *,
+.footer__twitter-wrap * {
+    transition: all 0.3s ease-in-out;
+}
 
 .footer__recent-posts .footer__recent-posts-article-link:last-child .footer__recent-posts-wrap:last-child {
     border-bottom: 1px solid transparent;
@@ -1030,6 +1119,10 @@ p {
 }
 
 .footer__recent-posts-article-link:hover .footer__recent-posts-date {
+    color: #FFFFFF;
+}
+
+.footer__twitter-article-link:hover .link-tag-href {
     color: #FFFFFF;
 }
 
@@ -1053,6 +1146,7 @@ p {
     color: #757575;
 }
 
+
 /* .footer__recent-posts-wrap:nth-child(2) .footer__recent-posts-date{
 color:red;
 margin-top: 0;
@@ -1075,6 +1169,12 @@ margin-top: 0;
     width: 130px;
     height: 98px;
     margin-bottom: 9px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.footer__widget-heading-img:hover {
+    transform: scale(1.3);
 }
 
 .footer__widget-heading {
@@ -1084,4 +1184,13 @@ margin-top: 0;
 .footer__about-logo {
     margin-bottom: 17px;
     display: inline-block;
+}
+
+.transition-scale {
+    transition-duration: 0.3s;
+    transition-property: fill, transform, color;
+}
+
+.transition-scale:hover {
+    transform: scale(1.25);
 }
