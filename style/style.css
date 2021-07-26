@@ -63,7 +63,8 @@ p {
 
 .header-nav {
     display: flex;
-    padding: 0 322px 0 323px;
+    /* padding: 0 322px 0 323px; */
+    padding: 0 calc(50% - 1275px/2);
     align-items: center;
     justify-content: space-between;
 }
@@ -884,6 +885,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .partners__logo {
@@ -1140,37 +1142,37 @@ p {
     transform: scale(1.25);
 }
 
-@media screen and (max-width: 500px) {
+/* @media screen and (max-width: 500px) {
 
-.recent-posts__wrap {
-    flex-wrap: wrap;
+    .recent-posts__wrap {
+        flex-wrap: wrap;
+    }
+
+    .mobile {
+
+        background-image: none;
+        background-color: #FBFAF8;
+    }
+
+    .mobile__heading,
+    .mobile__text,
+    .mobile__list {
+        margin-left: 0;
+    }
+
+
+.header-nav {
+   
+    padding: 0; 
 }
 
-.mobile {
 
-    background-image: none;
-    background-color: #FBFAF8;
-}
-
-.mobile__heading, .mobile__text, .mobile__list {
-    margin-left: 0;
-}
-
-
-
-
-/* *{
-    padding: 0;
-    margin: 0;
-} */
     .header {
-        /* padding: 0; */
         padding: 39px calc(50% - 490px/2) 0px calc(50% - 490px/2);
-        /* background-size: 100%; */
     }
 
     .slider-secton-wrapper {
-padding: 0;
+        padding: 0;
     }
 
     .services {
@@ -1179,7 +1181,7 @@ padding: 0;
     }
 
     .latest-project__list {
-flex-wrap: wrap;
+        flex-wrap: wrap;
     }
 
     .realization {
@@ -1221,7 +1223,7 @@ flex-wrap: wrap;
     }
 
     .footer__wrap {
-flex-wrap: wrap;
+        flex-wrap: wrap;
     }
 
 
@@ -1232,15 +1234,10 @@ flex-wrap: wrap;
     .header-nav {
         padding: 0;
     }
+
     .realization_img {
         display: none;
     }
-    /* .recent-posts {
-        padding: 0;
-        
-    } */
 
-    /* .recent-posts__wrap {
-        flex-wrap: wrap;
-    } */
-   }   
+} */
+
