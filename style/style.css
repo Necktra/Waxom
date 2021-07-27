@@ -63,7 +63,8 @@ p {
 
 .header-nav {
     display: flex;
-    padding: 0 322px 0 323px;
+    /* padding: 0 322px 0 323px; */
+    padding: 0 calc(50% - 1275px/2);
     align-items: center;
     justify-content: space-between;
 }
@@ -291,6 +292,11 @@ p {
     flex-direction: column;
     align-items: center;
     background-color: #FBFAF8;
+}
+
+.realization_img {
+    width: 100%;
+    max-width: 1232px;
 }
 
 .realization__heading {
@@ -600,7 +606,7 @@ p {
 }
 
 .mobile {
-    padding: 190px calc(50% - 1920px/2) 0 calc(50% - 1920px/2);
+    padding: 190px calc(50% - 605px) 0 calc(50% - 67px);
     box-sizing: border-box;
     min-height: 694px;
     background-image: url(../img/img/iphone.png);
@@ -610,7 +616,7 @@ p {
 }
 
 .mobile__heading {
-    margin-left: 908px;
+    /* margin-left: 908px; */
     font-family: Raleway;
     font-style: normal;
     font-weight: 600;
@@ -620,7 +626,7 @@ p {
 }
 
 .mobile__text {
-    margin-left: 908px;
+    /* margin-left: 908px; */
     font-family: Montserrat;
     font-style: normal;
     font-weight: 300;
@@ -631,7 +637,7 @@ p {
 }
 
 .mobile__list {
-    margin-left: 975px;
+    /* margin-left: 975px; */
     list-style: none;
     padding-left: 0;
 }
@@ -716,7 +722,7 @@ p {
     font-size: 16px;
     color: #8C8C8C;
     max-width: 770px;
-    margin: 0 auto 30px auto;
+    margin: 0 auto;
     text-align: center;
 }
 
@@ -732,6 +738,7 @@ p {
     position: relative;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
+    margin-top: 30px;
 }
 
 .recent-posts__wrap-section * {
@@ -884,6 +891,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .partners__logo {
@@ -1140,37 +1148,37 @@ p {
     transform: scale(1.25);
 }
 
-@media screen and (max-width: 500px) {
+/* @media screen and (max-width: 500px) {
 
-.recent-posts__wrap {
-    flex-wrap: wrap;
+    .recent-posts__wrap {
+        flex-wrap: wrap;
+    }
+
+    .mobile {
+
+        background-image: none;
+        background-color: #FBFAF8;
+    }
+
+    .mobile__heading,
+    .mobile__text,
+    .mobile__list {
+        margin-left: 0;
+    }
+
+
+.header-nav {
+   
+    padding: 0; 
 }
 
-.mobile {
 
-    background-image: none;
-    background-color: #FBFAF8;
-}
-
-.mobile__heading, .mobile__text, .mobile__list {
-    margin-left: 0;
-}
-
-
-
-
-/* *{
-    padding: 0;
-    margin: 0;
-} */
     .header {
-        /* padding: 0; */
         padding: 39px calc(50% - 490px/2) 0px calc(50% - 490px/2);
-        /* background-size: 100%; */
     }
 
     .slider-secton-wrapper {
-padding: 0;
+        padding: 0;
     }
 
     .services {
@@ -1179,7 +1187,7 @@ padding: 0;
     }
 
     .latest-project__list {
-flex-wrap: wrap;
+        flex-wrap: wrap;
     }
 
     .realization {
@@ -1221,7 +1229,7 @@ flex-wrap: wrap;
     }
 
     .footer__wrap {
-flex-wrap: wrap;
+        flex-wrap: wrap;
     }
 
 
@@ -1232,15 +1240,67 @@ flex-wrap: wrap;
     .header-nav {
         padding: 0;
     }
+
     .realization_img {
         display: none;
     }
-    /* .recent-posts {
-        padding: 0;
-        
-    } */
 
-    /* .recent-posts__wrap {
+} */
+
+@media screen and (max-width: 1320px) {
+    .header-nav {
+        margin: 0 30px;
+    }
+
+    .purchase {
+        justify-content: space-around;
+    }
+
+
+    .latest-project__content-wrapper {
+        justify-content: space-evenly;
+    }
+
+    .recent-posts__wrap {
         flex-wrap: wrap;
-    } */
-   }   
+        justify-content: space-evenly;
+        /* margin: 0 25px; */
+    }
+
+    .recent-posts__wrap-section {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    /* .recent-posts__wrap-section:last-child {
+margin-top: 25px;
+} */
+
+    .footer__nav-copyright {
+        margin-left: 20px;
+    }
+
+    .footer__wrap {
+        padding: 74px 20px 112px 20px;
+    }
+
+    .footer__widget * {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .mobile {
+        margin-right: 20px;
+    }
+
+    .realization_img {
+        width: 90%;
+    }
+
+}
+
+/* @media screen and (max-width: 1136px) {
+    .partners {
+        margin: 0 85px;
+    }
+} */
